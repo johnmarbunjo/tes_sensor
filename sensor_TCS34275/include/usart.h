@@ -1,0 +1,29 @@
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file    usart.h
+  * @brief   This file contains all the function prototypes for
+  *          the usart.c file (USART2: PA2 TX, PA3 RX).
+  ******************************************************************************
+  */
+/* USER CODE END Header */
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __USART_H__
+#define __USART_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+
+extern UART_HandleTypeDef huart2;
+
+void MX_USART2_UART_Init(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __USART_H__ */
